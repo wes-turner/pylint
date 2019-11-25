@@ -1,0 +1,22 @@
+https://realpython.com/intro-to-pyenv/
+
+Install pyenv:
+    curl https://pyenv.run | bash
+
+Then muck with the .zshrc
+
+Install python versions:
+    pyenv install -v 3.7.5
+    pyenv install -v 3.8.0
+    pyenv install -v 3.6.9
+    pyenv install -v 3.5.9
+
+Tell pyenv which pythons to make available:
+    pyenv global 3.8.0 3.7.5 3.6.9 3.5.9 pypy3.6-7.2.0                                                                                                                                                                                                   []
+
+Install packages:
+    pip3 install --upgrade pip tox-pyenv pylint
+
+https://pypi.org/project/tox-pyenv/
+When running tox, force versions to come from pyenv with the flag "--tox-pyenv-no-fallback"
+    python -m tox --tox-pyenv-no-fallback
