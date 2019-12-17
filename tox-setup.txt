@@ -20,3 +20,11 @@ Install packages:
 https://pypi.org/project/tox-pyenv/
 When running tox, force versions to come from pyenv with the flag "--tox-pyenv-no-fallback"
     python -m tox --tox-pyenv-no-fallback
+
+--------------------
+From:
+
+https://pylint.readthedocs.io/en/latest/development_guide/contribute.html
+
+* install pre-commit using `pip install pre-commit`
+* then run `pre-commit install` in the pylint root directory to enable the git hooks.
